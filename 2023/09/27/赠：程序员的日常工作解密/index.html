@@ -18,7 +18,7 @@
   <meta http-equiv="window-target" content="_top" />
   
   
-  <title>Feng</title>
+  <title>TianFeng&#39;s Blog</title>
   <meta name="description" content="程序员的日常工作解密调研1、后端工程师典型的日常1：国企受访人 22岁 平时每天的上班时间和下班时间分别是？ 早上 9 点上班， 晚上 6 点下班 最近一周有加班么？加班的天数是？一般加到多晚？ 最近一周加班三天，工作日加班到晚上8点30左右，周末一天加班一整天，晚上不加。 描述一下你的「典型的一天」  住公司提供的宿舍，早上8:40起床， 9点到公司食堂吃早饭， 9:30左右开始正式上班， 到1">
 <meta property="og:type" content="article">
 <meta property="og:title" content="tianfeng">
@@ -51,8 +51,13 @@
 <body class="main-center" itemscope itemtype="http://schema.org/WebPage">
   <script type="text/javascript" src="//cdn.bootcss.com/canvas-nest.js/1.0.0/canvas-nest.min.js"></script>
   <!-- <！ - 页面点击小红心 - > -->
-  <script type="text/javascript" src = "/js/love-click.js"></script> 
+  <!-- <script type="text/javascript" src = "/js/love-click.js"></script>  -->
  
+{% if theme.fireworks %}
+  <canvas class="fireworks" style="position: fixed;left: 0;top: 0;z-index: 1; pointer-events: none;" ></canvas> 
+  <script type="text/javascript" src="//cdn.bootcss.com/animejs/2.2.0/anime.min.js"></script> 
+  <script type="text/javascript" src="/js/fireworks.js"></script>
+{% endif %}
 
   <header class="header" itemscope itemtype="http://schema.org/WPHeader">
   <div class="slimContent">
@@ -60,7 +65,7 @@
       
       
       <div class="profile-block text-center">
-        <a id="avatar" href="https://github.com/cofess" target="_blank">
+        <a id="avatar" href="https://github.com/fengtien" target="_blank">
           <img class="img-circle img-rotate" src="/images/avatar.jpg" width="200" height="200">
         </a>
         <h2 id="name" class="hidden-xs hidden-sm">Feng`s Blog</h2>
@@ -101,7 +106,7 @@
       </button>
     </div>
     <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
-      <ul class="nav navbar-nav main-nav ">
+      <ul class="nav navbar-nav main-nav menu-highlight">
         
         
         <li class="menu-item menu-item-home">
@@ -188,13 +193,9 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/fengtien" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        <li><a href="https://space.bilibili.com/135478746" target="_blank" title="Facebook" data-toggle=tooltip data-placement=top><i class="icon icon-facebook"></i></a></li>
         
         <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
@@ -571,12 +572,12 @@
   <div class="panel-body">
     <figure class="media">
       <div class="media-left">
-        <a href="https://github.com/cofess" target="_blank" class="img-burn thumb-sm visible-lg">
+        <a href="https://github.com/fengtien" target="_blank" class="img-burn thumb-sm visible-lg">
           <img src="/images/avatar.jpg" class="img-rounded w-full" alt="">
         </a>
       </div>
       <div class="media-body">
-        <h3 class="media-heading"><a href="https://github.com/cofess" target="_blank"><span class="text-dark">Feng`s Blog</span><small class="ml-1x">Size The Time</small></a></h3>
+        <h3 class="media-heading"><a href="https://github.com/fengtien" target="_blank"><span class="text-dark">Feng`s Blog</span><small class="ml-1x">Size The Time</small></a></h3>
         <div>IT民工</div>
       </div>
     </figure>
@@ -678,13 +679,9 @@
 	
     <ul class="social-links">
     	
-        <li><a href="https://github.com/cofess" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
+        <li><a href="https://github.com/fengtien" target="_blank" title="Github" data-toggle=tooltip data-placement=top><i class="icon icon-github"></i></a></li>
         
-        <li><a href="http://weibo.com/cofess" target="_blank" title="Weibo" data-toggle=tooltip data-placement=top><i class="icon icon-weibo"></i></a></li>
-        
-        <li><a href="https://twitter.com/iwebued" target="_blank" title="Twitter" data-toggle=tooltip data-placement=top><i class="icon icon-twitter"></i></a></li>
-        
-        <li><a href="https://www.behance.net/cofess" target="_blank" title="Behance" data-toggle=tooltip data-placement=top><i class="icon icon-behance"></i></a></li>
+        <li><a href="https://space.bilibili.com/135478746" target="_blank" title="Facebook" data-toggle=tooltip data-placement=top><i class="icon icon-facebook"></i></a></li>
         
         <li><a href="/atom.xml" target="_blank" title="Rss" data-toggle=tooltip data-placement=top><i class="icon icon-rss"></i></a></li>
         
@@ -692,6 +689,8 @@
 
     <div class="copyright">
     	
+        &copy; 2023 Tian Feng
+        
         <div class="publishby">
         	Theme by <a href="https://github.com/cofess" target="_blank"> cofess </a>base on <a href="https://github.com/cofess/hexo-theme-pure" target="_blank">pure</a>.
         </div>
